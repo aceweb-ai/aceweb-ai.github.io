@@ -302,3 +302,15 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+.about-features {
+    margin-top: 1.5rem;
+}
+
+.feature {
+    background: #f8f9fa;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
