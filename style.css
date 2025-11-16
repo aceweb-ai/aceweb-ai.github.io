@@ -328,6 +328,55 @@ footer {
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
     color: white;
     font-size: 1.5rem;
+
+
+/* Стили для раздела "Обо мне" с фотографией */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.about-image {
+    flex-shrink: 0;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #3498db;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.about-text {
+    flex: 1;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .about-features {
+        text-align: left;
+    }
+}
     font-weight: bold;
     display: flex;
     align-items: center;
