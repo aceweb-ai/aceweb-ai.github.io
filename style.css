@@ -340,6 +340,7 @@ footer {
 
 .about-image {
     flex-shrink: 0;
+    position: relative;
 }
 
 .profile-photo {
@@ -350,10 +351,27 @@ footer {
     border: 5px solid #3498db;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     transition: transform 0.3s ease;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Фон на случай если фото не загрузится */
 }
 
 .profile-photo:hover {
     transform: scale(1.05);
+}
+
+.profile-photo:before {
+    content: "📸";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    display: none;
+}
+
+/* Показываем иконку если фото не загрузилось */
+.profile-photo[src=""]:before,
+.profile-photo:not([src]):before {
+    display: block;
 }
 
 .about-text {
@@ -376,10 +394,4 @@ footer {
     .about-features {
         text-align: left;
     }
-}
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
 }
