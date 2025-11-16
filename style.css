@@ -61,21 +61,22 @@ nav .container {
 /* Герой секция */
 #hero {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
     padding: 150px 0 100px;
     text-align: center;
     margin-top: 60px;
 }
 
-.hero-content h2 {
+#hero .hero-content h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #ffffff;
 }
 
-.hero-content p {
+#hero .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     opacity: 0.9;
+    color: #ffffff;
 }
 
 .btn {
